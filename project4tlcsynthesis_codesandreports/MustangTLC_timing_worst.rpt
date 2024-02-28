@@ -1,0 +1,1300 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 20
+        -max_paths 20
+        -sort_by group
+Design : MustangTLC
+Version: O-2018.06-SP1
+Date   : Sun Oct  8 02:42:56 2023
+****************************************
+
+Operating Conditions: slow   Library: IBM_CMOS8HP_SS125
+Wire Load Model Mode: enclosed
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.218      3.218 f
+  U122/Z (INVERT_H)                                      0.064      3.281 r
+  U123/Z (INVERT_K)                                      0.046      3.328 f
+  U104/Z (NOR2_D)                                        0.056      3.384 r
+  U49/Z (AO21_F)                                         0.114      3.498 r
+  U81/Z (INVERT_H)                                       0.049      3.547 f
+  U94/Z (OAI21_H)                                        0.109      3.656 r
+  U70/Z (INVERTBAL_J)                                    0.094      3.749 f
+  U112/Z (NOR3_C)                                        0.146      3.895 r
+  U83/Z (AO21_E)                                         0.202      4.097 r
+  U84/Z (INVERT_D)                                       0.056      4.153 f
+  U96/Z (OA21_F)                                         0.128      4.281 f
+  U97/Z (INVERT_D)                                       0.053      4.334 r
+  left_tail_light_control_reg[1]/D (DFFR_E)              0.000      4.334 r
+  data arrival time                                                 4.334
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  left_tail_light_control_reg[1]/CLK (DFFR_E)            0.000     12.300 r
+  library setup time                                    -0.116     12.184
+  data required time                                               12.184
+  --------------------------------------------------------------------------
+  data required time                                               12.184
+  data arrival time                                                -4.334
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.850
+
+
+  Startpoint: count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[1]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[1]/Q (DFFR_E)                                0.305      3.305 r
+  U114/Z (INVERT_H)                                      0.045      3.350 f
+  U115/Z (INVERT_I)                                      0.055      3.405 r
+  U79/Z (NAND2_F)                                        0.048      3.453 f
+  U109/Z (INVERT_D)                                      0.058      3.511 r
+  U110/Z (NOR2_C)                                        0.084      3.595 f
+  U107/Z (NOR2_C)                                        0.092      3.687 r
+  U74/Z (BUFFER_H)                                       0.068      3.754 r
+  U73/Z (INVERT_F)                                       0.035      3.789 f
+  U106/Z (INVERT_F)                                      0.050      3.839 r
+  U77/Z (AOI21_B)                                        0.083      3.922 f
+  U124/Z (AO21_D)                                        0.145      4.067 f
+  right_tail_light_control_reg[2]/D (DFFR_E)             0.000      4.067 f
+  data arrival time                                                 4.067
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  right_tail_light_control_reg[2]/CLK (DFFR_E)           0.000     12.300 r
+  library setup time                                    -0.238     12.062
+  data required time                                               12.062
+  --------------------------------------------------------------------------
+  data required time                                               12.062
+  data arrival time                                                -4.067
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.994
+
+
+  Startpoint: count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[1]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[1]/Q (DFFR_E)                                0.305      3.305 r
+  U114/Z (INVERT_H)                                      0.045      3.350 f
+  U115/Z (INVERT_I)                                      0.055      3.405 r
+  U79/Z (NAND2_F)                                        0.048      3.453 f
+  U109/Z (INVERT_D)                                      0.058      3.511 r
+  U110/Z (NOR2_C)                                        0.084      3.595 f
+  U107/Z (NOR2_C)                                        0.092      3.687 r
+  U74/Z (BUFFER_H)                                       0.068      3.754 r
+  U73/Z (INVERT_F)                                       0.035      3.789 f
+  U106/Z (INVERT_F)                                      0.050      3.839 r
+  U89/Z (AOI21_B)                                        0.083      3.922 f
+  U87/Z (AO21_D)                                         0.145      4.067 f
+  left_tail_light_control_reg[2]/D (DFFR_E)              0.000      4.067 f
+  data arrival time                                                 4.067
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  left_tail_light_control_reg[2]/CLK (DFFR_E)            0.000     12.300 r
+  library setup time                                    -0.238     12.062
+  data required time                                               12.062
+  --------------------------------------------------------------------------
+  data required time                                               12.062
+  data arrival time                                                -4.067
+  --------------------------------------------------------------------------
+  slack (MET)                                                       7.994
+
+
+  Startpoint: count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[0]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[0]/QBAR (DFFR_E)                             0.218      3.218 f
+  U47/Z (INVERT_H)                                       0.066      3.284 r
+  U57/Z (INVERT_L)                                       0.050      3.333 f
+  U80/Z (INVERT_J)                                       0.053      3.386 r
+  U79/Z (NAND2_F)                                        0.045      3.431 f
+  U109/Z (INVERT_D)                                      0.058      3.489 r
+  U110/Z (NOR2_C)                                        0.084      3.572 f
+  U107/Z (NOR2_C)                                        0.092      3.665 r
+  U74/Z (BUFFER_H)                                       0.068      3.732 r
+  U73/Z (INVERT_F)                                       0.035      3.767 f
+  U106/Z (INVERT_F)                                      0.050      3.817 r
+  U77/Z (AOI21_B)                                        0.083      3.900 f
+  U124/Z (AO21_D)                                        0.145      4.045 f
+  right_tail_light_control_reg[2]/D (DFFR_E)             0.000      4.045 f
+  data arrival time                                                 4.045
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  right_tail_light_control_reg[2]/CLK (DFFR_E)           0.000     12.300 r
+  library setup time                                    -0.238     12.062
+  data required time                                               12.062
+  --------------------------------------------------------------------------
+  data required time                                               12.062
+  data arrival time                                                -4.045
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.017
+
+
+  Startpoint: count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[0]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[0]/QBAR (DFFR_E)                             0.218      3.218 f
+  U47/Z (INVERT_H)                                       0.066      3.284 r
+  U57/Z (INVERT_L)                                       0.050      3.333 f
+  U80/Z (INVERT_J)                                       0.053      3.386 r
+  U79/Z (NAND2_F)                                        0.045      3.431 f
+  U109/Z (INVERT_D)                                      0.058      3.489 r
+  U110/Z (NOR2_C)                                        0.084      3.572 f
+  U107/Z (NOR2_C)                                        0.092      3.665 r
+  U74/Z (BUFFER_H)                                       0.068      3.732 r
+  U73/Z (INVERT_F)                                       0.035      3.767 f
+  U106/Z (INVERT_F)                                      0.050      3.817 r
+  U89/Z (AOI21_B)                                        0.083      3.900 f
+  U87/Z (AO21_D)                                         0.145      4.045 f
+  left_tail_light_control_reg[2]/D (DFFR_E)              0.000      4.045 f
+  data arrival time                                                 4.045
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  left_tail_light_control_reg[2]/CLK (DFFR_E)            0.000     12.300 r
+  library setup time                                    -0.238     12.062
+  data required time                                               12.062
+  --------------------------------------------------------------------------
+  data required time                                               12.062
+  data arrival time                                                -4.045
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.017
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.218      3.218 f
+  U122/Z (INVERT_H)                                      0.064      3.281 r
+  U123/Z (INVERT_K)                                      0.046      3.328 f
+  U105/Z (NOR2_D)                                        0.064      3.392 r
+  U50/Z (AO21_F)                                         0.114      3.506 r
+  U82/Z (INVERT_H)                                       0.049      3.555 f
+  U103/Z (OAI21_H)                                       0.109      3.664 r
+  U127/Z (INVERTBAL_J)                                   0.095      3.759 f
+  U125/Z (NOR3_C)                                        0.117      3.876 r
+  U71/Z (INVERT_H)                                       0.045      3.921 f
+  U72/Z (INVERT_H)                                       0.051      3.972 r
+  U76/Z (AOI21_B)                                        0.072      4.045 f
+  U75/Z (OAI21_C)                                        0.126      4.170 r
+  right_tail_light_control_reg[1]/D (DFFR_E)             0.000      4.170 r
+  data arrival time                                                 4.170
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  right_tail_light_control_reg[1]/CLK (DFFR_E)           0.000     12.300 r
+  library setup time                                    -0.112     12.188
+  data required time                                               12.188
+  --------------------------------------------------------------------------
+  data required time                                               12.188
+  data arrival time                                                -4.170
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.018
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.150      3.150 r
+  U122/Z (INVERT_H)                                      0.054      3.203 f
+  U123/Z (INVERT_K)                                      0.051      3.255 r
+  U104/Z (NOR2_D)                                        0.052      3.307 f
+  U49/Z (AO21_F)                                         0.107      3.414 f
+  U81/Z (INVERT_H)                                       0.053      3.467 r
+  U94/Z (OAI21_H)                                        0.044      3.511 f
+  U70/Z (INVERTBAL_J)                                    0.058      3.569 r
+  U112/Z (NOR3_C)                                        0.124      3.694 f
+  U83/Z (AO21_E)                                         0.141      3.835 f
+  U84/Z (INVERT_D)                                       0.059      3.894 r
+  U96/Z (OA21_F)                                         0.070      3.965 r
+  U97/Z (INVERT_D)                                       0.047      4.012 f
+  left_tail_light_control_reg[1]/D (DFFR_E)              0.000      4.012 f
+  data arrival time                                                 4.012
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  left_tail_light_control_reg[1]/CLK (DFFR_E)            0.000     12.300 r
+  library setup time                                    -0.235     12.065
+  data required time                                               12.065
+  --------------------------------------------------------------------------
+  data required time                                               12.065
+  data arrival time                                                -4.012
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.053
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.218      3.218 f
+  U122/Z (INVERT_H)                                      0.064      3.281 r
+  U123/Z (INVERT_K)                                      0.046      3.328 f
+  U105/Z (NOR2_D)                                        0.064      3.392 r
+  U50/Z (AO21_F)                                         0.114      3.506 r
+  U82/Z (INVERT_H)                                       0.049      3.555 f
+  U103/Z (OAI21_H)                                       0.109      3.664 r
+  U127/Z (INVERTBAL_J)                                   0.095      3.759 f
+  U125/Z (NOR3_C)                                        0.117      3.876 r
+  U71/Z (INVERT_H)                                       0.045      3.921 f
+  U72/Z (INVERT_H)                                       0.051      3.972 r
+  U102/Z (AOI21_B)                                       0.065      4.037 f
+  U98/Z (NAND2_D)                                        0.084      4.121 r
+  right_tail_light_control_reg[0]/D (DFFR_E)             0.000      4.122 r
+  data arrival time                                                 4.122
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  right_tail_light_control_reg[0]/CLK (DFFR_E)           0.000     12.300 r
+  library setup time                                    -0.106     12.194
+  data required time                                               12.194
+  --------------------------------------------------------------------------
+  data required time                                               12.194
+  data arrival time                                                -4.122
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.072
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.150      3.150 r
+  U122/Z (INVERT_H)                                      0.054      3.203 f
+  U123/Z (INVERT_K)                                      0.051      3.255 r
+  U105/Z (NOR2_D)                                        0.060      3.315 f
+  U50/Z (AO21_F)                                         0.107      3.422 f
+  U82/Z (INVERT_H)                                       0.053      3.475 r
+  U103/Z (OAI21_H)                                       0.044      3.518 f
+  U127/Z (INVERTBAL_J)                                   0.059      3.578 r
+  U125/Z (NOR3_C)                                        0.101      3.678 f
+  U71/Z (INVERT_H)                                       0.058      3.736 r
+  U72/Z (INVERT_H)                                       0.045      3.781 f
+  U102/Z (AOI21_B)                                       0.121      3.902 r
+  U98/Z (NAND2_D)                                        0.067      3.969 f
+  right_tail_light_control_reg[0]/D (DFFR_E)             0.000      3.969 f
+  data arrival time                                                 3.969
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  right_tail_light_control_reg[0]/CLK (DFFR_E)           0.000     12.300 r
+  library setup time                                    -0.239     12.061
+  data required time                                               12.061
+  --------------------------------------------------------------------------
+  data required time                                               12.061
+  data arrival time                                                -3.969
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.092
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.150      3.150 r
+  U122/Z (INVERT_H)                                      0.054      3.203 f
+  U123/Z (INVERT_K)                                      0.051      3.255 r
+  U105/Z (NOR2_D)                                        0.060      3.315 f
+  U50/Z (AO21_F)                                         0.107      3.422 f
+  U82/Z (INVERT_H)                                       0.053      3.475 r
+  U103/Z (OAI21_H)                                       0.044      3.518 f
+  U127/Z (INVERTBAL_J)                                   0.059      3.578 r
+  U125/Z (NOR3_C)                                        0.101      3.678 f
+  U71/Z (INVERT_H)                                       0.058      3.736 r
+  U72/Z (INVERT_H)                                       0.045      3.781 f
+  U76/Z (AOI21_B)                                        0.138      3.919 r
+  U75/Z (OAI21_C)                                        0.041      3.960 f
+  right_tail_light_control_reg[1]/D (DFFR_E)             0.000      3.960 f
+  data arrival time                                                 3.960
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  right_tail_light_control_reg[1]/CLK (DFFR_E)           0.000     12.300 r
+  library setup time                                    -0.238     12.062
+  data required time                                               12.062
+  --------------------------------------------------------------------------
+  data required time                                               12.062
+  data arrival time                                                -3.960
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.101
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.150      3.150 r
+  U122/Z (INVERT_H)                                      0.054      3.203 f
+  U123/Z (INVERT_K)                                      0.051      3.255 r
+  U129/Z (INVERT_K)                                      0.047      3.302 f
+  U94/Z (OAI21_H)                                        0.102      3.404 r
+  U70/Z (INVERTBAL_J)                                    0.094      3.498 f
+  U112/Z (NOR3_C)                                        0.146      3.643 r
+  U83/Z (AO21_E)                                         0.202      3.845 r
+  U84/Z (INVERT_D)                                       0.056      3.901 f
+  U96/Z (OA21_F)                                         0.128      4.029 f
+  U97/Z (INVERT_D)                                       0.053      4.082 r
+  left_tail_light_control_reg[1]/D (DFFR_E)              0.000      4.082 r
+  data arrival time                                                 4.082
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  left_tail_light_control_reg[1]/CLK (DFFR_E)            0.000     12.300 r
+  library setup time                                    -0.116     12.184
+  data required time                                               12.184
+  --------------------------------------------------------------------------
+  data required time                                               12.184
+  data arrival time                                                -4.082
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.102
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.218      3.218 f
+  U122/Z (INVERT_H)                                      0.064      3.281 r
+  U123/Z (INVERT_K)                                      0.046      3.328 f
+  U129/Z (INVERT_K)                                      0.053      3.380 r
+  U94/Z (OAI21_H)                                        0.060      3.441 f
+  U70/Z (INVERTBAL_J)                                    0.058      3.499 r
+  U112/Z (NOR3_C)                                        0.124      3.624 f
+  U83/Z (AO21_E)                                         0.141      3.765 f
+  U84/Z (INVERT_D)                                       0.059      3.824 r
+  U96/Z (OA21_F)                                         0.070      3.895 r
+  U97/Z (INVERT_D)                                       0.047      3.942 f
+  left_tail_light_control_reg[1]/D (DFFR_E)              0.000      3.942 f
+  data arrival time                                                 3.942
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  left_tail_light_control_reg[1]/CLK (DFFR_E)            0.000     12.300 r
+  library setup time                                    -0.235     12.065
+  data required time                                               12.065
+  --------------------------------------------------------------------------
+  data required time                                               12.065
+  data arrival time                                                -3.942
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.123
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.218      3.218 f
+  U122/Z (INVERT_H)                                      0.064      3.281 r
+  U123/Z (INVERT_K)                                      0.046      3.328 f
+  U104/Z (NOR2_D)                                        0.056      3.384 r
+  U49/Z (AO21_F)                                         0.114      3.498 r
+  U81/Z (INVERT_H)                                       0.049      3.547 f
+  U94/Z (OAI21_H)                                        0.109      3.656 r
+  U70/Z (INVERTBAL_J)                                    0.094      3.749 f
+  U112/Z (NOR3_C)                                        0.146      3.895 r
+  U95/Z (AOI21_B)                                        0.091      3.986 f
+  U48/Z (NAND2_D)                                        0.085      4.070 r
+  left_tail_light_control_reg[0]/D (DFFR_E)              0.000      4.071 r
+  data arrival time                                                 4.071
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  left_tail_light_control_reg[0]/CLK (DFFR_E)            0.000     12.300 r
+  library setup time                                    -0.106     12.194
+  data required time                                               12.194
+  --------------------------------------------------------------------------
+  data required time                                               12.194
+  data arrival time                                                -4.071
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.123
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.218      3.218 f
+  U122/Z (INVERT_H)                                      0.064      3.281 r
+  U123/Z (INVERT_K)                                      0.046      3.328 f
+  U105/Z (NOR2_D)                                        0.064      3.392 r
+  U50/Z (AO21_F)                                         0.114      3.506 r
+  U82/Z (INVERT_H)                                       0.049      3.555 f
+  U103/Z (OAI21_H)                                       0.109      3.664 r
+  U127/Z (INVERTBAL_J)                                   0.095      3.759 f
+  U77/Z (AOI21_B)                                        0.127      3.885 r
+  U124/Z (AO21_D)                                        0.177      4.062 r
+  right_tail_light_control_reg[2]/D (DFFR_E)             0.000      4.063 r
+  data arrival time                                                 4.063
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  right_tail_light_control_reg[2]/CLK (DFFR_E)           0.000     12.300 r
+  library setup time                                    -0.106     12.194
+  data required time                                               12.194
+  --------------------------------------------------------------------------
+  data required time                                               12.194
+  data arrival time                                                -4.063
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.132
+
+
+  Startpoint: count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[0]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[0]/QBAR (DFFR_E)                             0.150      3.150 r
+  U47/Z (INVERT_H)                                       0.056      3.205 f
+  U57/Z (INVERT_L)                                       0.055      3.261 r
+  U80/Z (INVERT_J)                                       0.048      3.309 f
+  U79/Z (NAND2_F)                                        0.055      3.364 r
+  U109/Z (INVERT_D)                                      0.056      3.420 f
+  U110/Z (NOR2_C)                                        0.087      3.507 r
+  U107/Z (NOR2_C)                                        0.091      3.599 f
+  U74/Z (BUFFER_H)                                       0.081      3.680 f
+  U73/Z (INVERT_F)                                       0.040      3.719 r
+  U106/Z (INVERT_F)                                      0.046      3.765 f
+  U89/Z (AOI21_B)                                        0.111      3.876 r
+  U87/Z (AO21_D)                                         0.177      4.053 r
+  left_tail_light_control_reg[2]/D (DFFR_E)              0.000      4.053 r
+  data arrival time                                                 4.053
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  left_tail_light_control_reg[2]/CLK (DFFR_E)            0.000     12.300 r
+  library setup time                                    -0.106     12.194
+  data required time                                               12.194
+  --------------------------------------------------------------------------
+  data required time                                               12.194
+  data arrival time                                                -4.053
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.141
+
+
+  Startpoint: count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[0]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[0]/QBAR (DFFR_E)                             0.150      3.150 r
+  U47/Z (INVERT_H)                                       0.056      3.205 f
+  U57/Z (INVERT_L)                                       0.055      3.261 r
+  U80/Z (INVERT_J)                                       0.048      3.309 f
+  U79/Z (NAND2_F)                                        0.055      3.364 r
+  U109/Z (INVERT_D)                                      0.056      3.420 f
+  U110/Z (NOR2_C)                                        0.087      3.507 r
+  U107/Z (NOR2_C)                                        0.091      3.599 f
+  U74/Z (BUFFER_H)                                       0.081      3.680 f
+  U73/Z (INVERT_F)                                       0.040      3.719 r
+  U106/Z (INVERT_F)                                      0.046      3.765 f
+  U77/Z (AOI21_B)                                        0.111      3.876 r
+  U124/Z (AO21_D)                                        0.177      4.053 r
+  right_tail_light_control_reg[2]/D (DFFR_E)             0.000      4.053 r
+  data arrival time                                                 4.053
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  right_tail_light_control_reg[2]/CLK (DFFR_E)           0.000     12.300 r
+  library setup time                                    -0.106     12.194
+  data required time                                               12.194
+  --------------------------------------------------------------------------
+  data required time                                               12.194
+  data arrival time                                                -4.053
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.141
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.218      3.218 f
+  U122/Z (INVERT_H)                                      0.064      3.281 r
+  U123/Z (INVERT_K)                                      0.046      3.328 f
+  U104/Z (NOR2_D)                                        0.056      3.384 r
+  U49/Z (AO21_F)                                         0.114      3.498 r
+  U81/Z (INVERT_H)                                       0.049      3.547 f
+  U94/Z (OAI21_H)                                        0.109      3.656 r
+  U70/Z (INVERTBAL_J)                                    0.094      3.749 f
+  U89/Z (AOI21_B)                                        0.126      3.876 r
+  U87/Z (AO21_D)                                         0.177      4.053 r
+  left_tail_light_control_reg[2]/D (DFFR_E)              0.000      4.053 r
+  data arrival time                                                 4.053
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  left_tail_light_control_reg[2]/CLK (DFFR_E)            0.000     12.300 r
+  library setup time                                    -0.106     12.194
+  data required time                                               12.194
+  --------------------------------------------------------------------------
+  data required time                                               12.194
+  data arrival time                                                -4.053
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.141
+
+
+  Startpoint: count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[1]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[1]/Q (DFFR_E)                                0.197      3.197 f
+  U114/Z (INVERT_H)                                      0.050      3.247 r
+  U115/Z (INVERT_I)                                      0.048      3.295 f
+  U79/Z (NAND2_F)                                        0.062      3.357 r
+  U109/Z (INVERT_D)                                      0.056      3.413 f
+  U110/Z (NOR2_C)                                        0.087      3.500 r
+  U107/Z (NOR2_C)                                        0.091      3.592 f
+  U74/Z (BUFFER_H)                                       0.081      3.673 f
+  U73/Z (INVERT_F)                                       0.040      3.712 r
+  U106/Z (INVERT_F)                                      0.046      3.758 f
+  U89/Z (AOI21_B)                                        0.111      3.869 r
+  U87/Z (AO21_D)                                         0.177      4.046 r
+  left_tail_light_control_reg[2]/D (DFFR_E)              0.000      4.046 r
+  data arrival time                                                 4.046
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  left_tail_light_control_reg[2]/CLK (DFFR_E)            0.000     12.300 r
+  library setup time                                    -0.106     12.194
+  data required time                                               12.194
+  --------------------------------------------------------------------------
+  data required time                                               12.194
+  data arrival time                                                -4.046
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.148
+
+
+  Startpoint: count_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[1]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[1]/Q (DFFR_E)                                0.197      3.197 f
+  U114/Z (INVERT_H)                                      0.050      3.247 r
+  U115/Z (INVERT_I)                                      0.048      3.295 f
+  U79/Z (NAND2_F)                                        0.062      3.357 r
+  U109/Z (INVERT_D)                                      0.056      3.413 f
+  U110/Z (NOR2_C)                                        0.087      3.500 r
+  U107/Z (NOR2_C)                                        0.091      3.592 f
+  U74/Z (BUFFER_H)                                       0.081      3.673 f
+  U73/Z (INVERT_F)                                       0.040      3.712 r
+  U106/Z (INVERT_F)                                      0.046      3.758 f
+  U77/Z (AOI21_B)                                        0.111      3.869 r
+  U124/Z (AO21_D)                                        0.177      4.046 r
+  right_tail_light_control_reg[2]/D (DFFR_E)             0.000      4.046 r
+  data arrival time                                                 4.046
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  right_tail_light_control_reg[2]/CLK (DFFR_E)           0.000     12.300 r
+  library setup time                                    -0.106     12.194
+  data required time                                               12.194
+  --------------------------------------------------------------------------
+  data required time                                               12.194
+  data arrival time                                                -4.046
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.148
+
+
+  Startpoint: count_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  count_reg[2]/CLK (DFFR_E)                              0.000      3.000 r
+  count_reg[2]/QBAR (DFFR_E)                             0.218      3.218 f
+  U122/Z (INVERT_H)                                      0.064      3.281 r
+  U123/Z (INVERT_K)                                      0.046      3.328 f
+  U104/Z (NOR2_D)                                        0.056      3.384 r
+  U49/Z (AO21_F)                                         0.114      3.498 r
+  U81/Z (INVERT_H)                                       0.049      3.547 f
+  U94/Z (OAI21_H)                                        0.109      3.656 r
+  U83/Z (AO21_E)                                         0.140      3.796 r
+  U84/Z (INVERT_D)                                       0.056      3.852 f
+  U96/Z (OA21_F)                                         0.128      3.980 f
+  U97/Z (INVERT_D)                                       0.053      4.033 r
+  left_tail_light_control_reg[1]/D (DFFR_E)              0.000      4.033 r
+  data arrival time                                                 4.033
+
+  clock clk (rise edge)                                 10.000     10.000
+  clock network delay (ideal)                            3.000     13.000
+  clock uncertainty                                     -0.700     12.300
+  left_tail_light_control_reg[1]/CLK (DFFR_E)            0.000     12.300 r
+  library setup time                                    -0.116     12.184
+  data required time                                               12.184
+  --------------------------------------------------------------------------
+  data required time                                               12.184
+  data arrival time                                                -4.033
+  --------------------------------------------------------------------------
+  slack (MET)                                                       8.151
+
+
+  Startpoint: right_tail_light_control_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control[0]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  right_tail_light_control_reg[0]/CLK (DFFR_E)           0.000      3.000 r
+  right_tail_light_control_reg[0]/Q (DFFR_E)             0.319      3.319 r
+  U132/Z (INVERT_J)                                      0.054      3.374 f
+  U133/Z (INVERT_O)                                      0.055      3.428 r
+  right_tail_light_control[0] (out)                      0.002      3.431 r
+  data arrival time                                                 3.431
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.431
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.569
+
+
+  Startpoint: right_tail_light_control_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control[1]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  right_tail_light_control_reg[1]/CLK (DFFR_E)           0.000      3.000 r
+  right_tail_light_control_reg[1]/Q (DFFR_E)             0.319      3.319 r
+  U130/Z (INVERT_J)                                      0.054      3.374 f
+  U131/Z (INVERT_O)                                      0.055      3.428 r
+  right_tail_light_control[1] (out)                      0.002      3.431 r
+  data arrival time                                                 3.431
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.431
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.569
+
+
+  Startpoint: left_tail_light_control_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control[0]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  left_tail_light_control_reg[0]/CLK (DFFR_E)            0.000      3.000 r
+  left_tail_light_control_reg[0]/Q (DFFR_E)              0.319      3.319 r
+  U136/Z (INVERT_J)                                      0.054      3.374 f
+  U137/Z (INVERT_O)                                      0.055      3.428 r
+  left_tail_light_control[0] (out)                       0.002      3.431 r
+  data arrival time                                                 3.431
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.431
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.569
+
+
+  Startpoint: left_tail_light_control_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control[1]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  left_tail_light_control_reg[1]/CLK (DFFR_E)            0.000      3.000 r
+  left_tail_light_control_reg[1]/Q (DFFR_E)              0.319      3.319 r
+  U134/Z (INVERT_J)                                      0.054      3.374 f
+  U135/Z (INVERT_O)                                      0.055      3.428 r
+  left_tail_light_control[1] (out)                       0.002      3.431 r
+  data arrival time                                                 3.431
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.431
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.569
+
+
+  Startpoint: right_tail_light_control_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control[2]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  right_tail_light_control_reg[2]/CLK (DFFR_E)           0.000      3.000 r
+  right_tail_light_control_reg[2]/QBAR (DFFR_E)          0.229      3.229 f
+  U56/Z (INVERT_I)                                       0.058      3.286 r
+  U55/Z (INVERT_J)                                       0.045      3.332 f
+  U91/Z (INVERT_O)                                       0.052      3.384 r
+  right_tail_light_control[2] (out)                      0.002      3.386 r
+  data arrival time                                                 3.386
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.386
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.614
+
+
+  Startpoint: left_tail_light_control_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control[2]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  left_tail_light_control_reg[2]/CLK (DFFR_E)            0.000      3.000 r
+  left_tail_light_control_reg[2]/QBAR (DFFR_E)           0.229      3.229 f
+  U54/Z (INVERT_I)                                       0.058      3.286 r
+  U53/Z (INVERT_J)                                       0.045      3.332 f
+  U88/Z (INVERT_O)                                       0.052      3.384 r
+  left_tail_light_control[2] (out)                       0.002      3.386 r
+  data arrival time                                                 3.386
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.386
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.614
+
+
+  Startpoint: right_tail_light_control_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control[0]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  right_tail_light_control_reg[0]/CLK (DFFR_E)           0.000      3.000 r
+  right_tail_light_control_reg[0]/Q (DFFR_E)             0.211      3.211 f
+  U132/Z (INVERT_J)                                      0.060      3.271 r
+  U133/Z (INVERT_O)                                      0.048      3.319 f
+  right_tail_light_control[0] (out)                      0.002      3.321 f
+  data arrival time                                                 3.321
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.321
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.679
+
+
+  Startpoint: right_tail_light_control_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control[1]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  right_tail_light_control_reg[1]/CLK (DFFR_E)           0.000      3.000 r
+  right_tail_light_control_reg[1]/Q (DFFR_E)             0.211      3.211 f
+  U130/Z (INVERT_J)                                      0.060      3.271 r
+  U131/Z (INVERT_O)                                      0.048      3.319 f
+  right_tail_light_control[1] (out)                      0.002      3.321 f
+  data arrival time                                                 3.321
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.321
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.679
+
+
+  Startpoint: left_tail_light_control_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control[0]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  left_tail_light_control_reg[0]/CLK (DFFR_E)            0.000      3.000 r
+  left_tail_light_control_reg[0]/Q (DFFR_E)              0.211      3.211 f
+  U136/Z (INVERT_J)                                      0.060      3.271 r
+  U137/Z (INVERT_O)                                      0.048      3.319 f
+  left_tail_light_control[0] (out)                       0.002      3.321 f
+  data arrival time                                                 3.321
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.321
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.679
+
+
+  Startpoint: left_tail_light_control_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control[1]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  left_tail_light_control_reg[1]/CLK (DFFR_E)            0.000      3.000 r
+  left_tail_light_control_reg[1]/Q (DFFR_E)              0.211      3.211 f
+  U134/Z (INVERT_J)                                      0.060      3.271 r
+  U135/Z (INVERT_O)                                      0.048      3.319 f
+  left_tail_light_control[1] (out)                       0.002      3.321 f
+  data arrival time                                                 3.321
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.321
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.679
+
+
+  Startpoint: right_tail_light_control_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: right_tail_light_control[2]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  right_tail_light_control_reg[2]/CLK (DFFR_E)           0.000      3.000 r
+  right_tail_light_control_reg[2]/QBAR (DFFR_E)          0.162      3.162 r
+  U56/Z (INVERT_I)                                       0.048      3.210 f
+  U55/Z (INVERT_J)                                       0.051      3.261 r
+  U91/Z (INVERT_O)                                       0.047      3.307 f
+  right_tail_light_control[2] (out)                      0.002      3.309 f
+  data arrival time                                                 3.309
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.309
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.691
+
+
+  Startpoint: left_tail_light_control_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: left_tail_light_control[2]
+            (output port clocked by v_clk)
+  Path Group: v_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MustangTLC         500K_CELLS_6LMC4A     IBM_CMOS8HP_SS125
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                  0.000      0.000
+  clock network delay (ideal)                            3.000      3.000
+  left_tail_light_control_reg[2]/CLK (DFFR_E)            0.000      3.000 r
+  left_tail_light_control_reg[2]/QBAR (DFFR_E)           0.162      3.162 r
+  U54/Z (INVERT_I)                                       0.048      3.210 f
+  U53/Z (INVERT_J)                                       0.051      3.260 r
+  U88/Z (INVERT_O)                                       0.047      3.307 f
+  left_tail_light_control[2] (out)                       0.002      3.309 f
+  data arrival time                                                 3.309
+
+  clock v_clk (rise edge)                               10.000     10.000
+  clock network delay (ideal)                            0.000     10.000
+  output external delay                                 -2.000      8.000
+  data required time                                                8.000
+  --------------------------------------------------------------------------
+  data required time                                                8.000
+  data arrival time                                                -3.309
+  --------------------------------------------------------------------------
+  slack (MET)                                                       4.691
+
+
+1
