@@ -21,8 +21,8 @@ This project implements a tail light sequencer for a Mustang vehicle using Veril
 
 ## Features
 
-- **Turn Signal Sequencing**: :contentReference
-- **Brake Light Control**: :contentReference
+- **Turn Signal Sequencing**:
+- **Brake Light Control**: 
 
 - **Combined Signal Handling**: Distinct behaviors when both turn signals and brakes are activated concurrently.
 
